@@ -1,5 +1,17 @@
-provider "aws" {
-  region = "ap-south-1"
+# provider "aws" {
+#   required_version = "~> 1.3.0"
+#   region = "ap-south-1"
+# }
+
+terraform {
+  required_providers {
+    aws = {
+      version = "~> 2.7.0"
+    }
+
+  }
+
+  required_version = "~> 1.3.0"
 }
 
 
