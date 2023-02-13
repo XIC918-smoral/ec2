@@ -19,3 +19,8 @@ resource "aws_instance" "foo" {
   instance_type = "t2.micro"
   tags          = { Name = "Buddy_task" }
 }
+
+resource "aws_s3_bucket" "b" {
+  bucket = "my-tf-test-bucket21099"
+ acl           = "public-read"
+}
