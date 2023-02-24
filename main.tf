@@ -24,3 +24,5 @@ resource "aws_s3_bucket" "b" {
   bucket = "my-tf-test-bucket21099"
  acl           = "public-read"
 }
+
+echo'test'
